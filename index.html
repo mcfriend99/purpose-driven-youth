@@ -1,451 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Purpose-Driven Professional: A Blueprint for Impact</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F0F4F8;
-            color: #1F2937;
-        }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 320px;
-            max-height: 400px;
-        }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-            }
-        }
-        .stat-card {
-            background-color: #00449E;
-            color: #FFFFFF;
-        }
-        .brand-text-deep { color: #00449E; }
-        .brand-text-bright { color: #0079D8; }
-        .brand-bg-deep { background-color: #00449E; }
-        .brand-bg-bright { background-color: #0079D8; }
-        .brand-bg-light { background-color: #48B2FF; }
-        .brand-bg-sky { background-color: #9CE1FF; }
-        .flowchart-step {
-            border-color: #0079D8;
-        }
-        .flowchart-arrow {
-            color: #0079D8;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Purpose-Driven Professional: A Blueprint for Impact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F0F4F8;
+      color: #1F2937;
+    }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 320px;
+      max-height: 400px;
+    }
+
+    @media (min-width: 768px) {
+      .chart-container {
+        height: 350px;
+      }
+    }
+
+    .stat-card {
+      background-color: #00449E;
+      color: #FFFFFF;
+    }
+
+    .brand-text-deep {
+      color: #00449E;
+    }
+
+    .brand-text-bright {
+      color: #0079D8;
+    }
+
+    .brand-bg-deep {
+      background-color: #00449E;
+    }
+
+    .brand-bg-bright {
+      background-color: #0079D8;
+    }
+
+    .brand-bg-light {
+      background-color: #48B2FF;
+    }
+
+    .brand-bg-sky {
+      background-color: #9CE1FF;
+    }
+
+    .flowchart-step {
+      border-color: #0079D8;
+    }
+
+    .flowchart-arrow {
+      color: #0079D8;
+    }
+  </style>
 </head>
+
 <body class="antialiased">
 
-    <div class="container mx-auto p-4 md:p-8">
-        
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-black brand-text-deep mb-2">The Purpose-Driven Professional</h1>
-            <p class="text-lg md:text-xl text-gray-600">A Blueprint for Kingdom Impact and Financial Stewardship</p>
-            <p class="text-sm text-gray-500 mt-2">Inspired by Jeremiah 1:5: "Before I formed you in the womb I knew you..."</p>
-        </header>
-        
-        <section id="introduction" class="mb-16">
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="stat-card rounded-lg shadow-lg p-6 flex flex-col justify-center items-center text-center md:col-span-1">
-                    <span class="text-6xl font-black">78%</span>
-                    <span class="mt-2 text-lg">of Christian youths prioritize purpose over salary in their career choices.</span>
-                </div>
-                <div class="md:col-span-2 bg-white rounded-lg shadow-md p-6 flex items-center">
-                    <div>
-                        <h2 class="text-2xl font-bold brand-text-bright mb-3">Redefining Success</h2>
-                        <p class="text-gray-700">Today's faith-driven youth are shifting their focus from purely financial gain to a more holistic definition of success. The new benchmark is a career that not only provides for their needs but also aligns with their God-given talents and allows them to make a tangible impact on the world. This infographic explores the data and strategies behind this powerful movement towards purpose-driven prosperity.</p>
-                    </div>
-                </div>
+  <div class="container mx-auto p-4 md:p-8">
+
+    <header class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-black brand-text-deep mb-2">The Purpose-Driven Professional</h1>
+      <p class="text-lg md:text-xl text-gray-600">A Blueprint for Kingdom Impact and Financial Stewardship</p>
+      <p class="text-sm text-center text-gray-500 mt-2">
+        "Before I formed you in the womb I knew you, and before you were born I consecrated you; I appointed you a prophet to the nations."
+        <br>
+        - Jeremiah 1:5 (ESV)
+      </p>
+    </header>
+
+    <section id="introduction" class="mb-16">
+      <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="stat-card rounded-lg shadow-lg p-6 flex flex-col justify-center items-center text-center md:col-span-1">
+          <span class="text-6xl font-black">78%</span>
+          <span class="mt-2 text-lg">of Christian youths prioritize purpose over salary in their career choices.</span>
+        </div>
+        <div class="md:col-span-2 bg-white rounded-lg shadow-md p-6 flex items-center">
+          <div>
+            <h2 class="text-2xl font-bold brand-text-bright mb-3">Redefining Success</h2>
+            <p class="text-gray-700">Today's faith-driven youth are shifting their focus from purely financial gain to a
+              more holistic definition of success. The new benchmark is a career that not only provides for their needs
+              but also aligns with their God-given talents and allows them to make a tangible impact on the world. This
+              website explores the data and strategies behind this powerful movement towards purpose-driven prosperity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="career-choices" class="mb-16">
+      <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold brand-text-deep">I. Purpose-Driven Career Choices</h2>
+          <p class="max-w-3xl mx-auto mt-2 text-gray-600">The foundation of a purpose-driven life is choosing a path
+            that utilizes your unique gifts to meet a real-world need. This is about strategic positioning for maximum
+            impact, not just chasing a paycheck.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">Top 5 Growing Sectors for Kingdom Impact
+            </h3>
+            <p class="text-gray-600 mb-4 text-center md:text-left">Analysis shows significant growth in sectors where
+              innovation, service, and ethical leadership can create profound positive change. These fields offer a
+              fertile ground for professionals aiming to blend their faith with their work.</p>
+            <div class="chart-container h-80 md:h-96">
+              <canvas id="topSectorsChart"></canvas>
             </div>
-        </section>
-
-        <section id="career-choices" class="mb-16">
-            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold brand-text-deep">I. Purpose-Driven Career Choices</h2>
-                    <p class="max-w-3xl mx-auto mt-2 text-gray-600">The foundation of a purpose-driven life is choosing a path that utilizes your unique gifts to meet a real-world need. This is about strategic positioning for maximum impact, not just chasing a paycheck.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">Top 5 Growing Sectors for Kingdom Impact</h3>
-                        <p class="text-gray-600 mb-4 text-center md:text-left">Analysis shows significant growth in sectors where innovation, service, and ethical leadership can create profound positive change. These fields offer a fertile ground for professionals aiming to blend their faith with their work.</p>
-                        <div class="chart-container h-80 md:h-96">
-                            <canvas id="topSectorsChart"></canvas>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">What Motivates Career Decisions?</h3>
-                        <p class="text-gray-600 mb-4 text-center md:text-left">While financial stability remains important, it's no longer the sole driver. A significant majority are looking for roles that offer a sense of purpose and alignment with their personal values, creating a fulfilling and impactful professional life.</p>
-                        <div class="chart-container h-80 md:h-96">
-                            <canvas id="motivationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">What Motivates Career Decisions?</h3>
+            <p class="text-gray-600 mb-4 text-center md:text-left">While financial stability remains important, it's no
+              longer the sole driver. A significant majority are looking for roles that offer a sense of purpose and
+              alignment with their personal values, creating a fulfilling and impactful professional life.</p>
+            <div class="chart-container h-80 md:h-96">
+              <canvas id="motivationChart"></canvas>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="excellence" class="mb-16">
-             <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold brand-text-deep">II. The Spirit of Excellence</h2>
-                    <p class="max-w-3xl mx-auto mt-2 text-gray-600">Excellence is not a mere suggestion; it is a spiritual mandate that glorifies God and opens doors to greater influence. It is the tangible expression of our commitment to our calling.</p>
-                </div>
-                 <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
-                     <div class="md:col-span-3">
-                        <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">Excellence Accelerates Career Progression</h3>
-                        <p class="text-gray-600 mb-4">Data from workplace performance reviews indicates a direct and powerful correlation between a commitment to excellence (measured by factors like diligence, integrity, and proactive problem-solving) and career velocity. Those who operate with a spirit of excellence are not just noticed; they are trusted with more responsibility and leadership, significantly outpacing their peers in both influence and income potential.</p>
-                         <div class="chart-container h-80 md:h-96">
-                             <canvas id="excellenceChart"></canvas>
-                         </div>
-                     </div>
-                     <div class="md:col-span-2 space-y-4">
-                         <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-                             <h4 class="font-bold">Builds Trust</h4>
-                             <p class="text-sm text-gray-600">Consistent, high-quality work establishes you as a credible and reliable professional.</p>
-                         </div>
-                         <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-                             <h4 class="font-bold">Positions for Influence</h4>
-                             <p class="text-sm text-gray-600">Competence earns you a seat at the table where key decisions are made.</p>
-                         </div>
-                         <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-                             <h4 class="font-bold">Reflects Your Calling</h4>
-                             <p class="text-sm text-gray-600">Your work becomes an act of worship and a testament to your faith.</p>
-                         </div>
-                     </div>
-                 </div>
+    <section id="excellence" class="mb-16">
+      <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold brand-text-deep">II. The Spirit of Excellence</h2>
+          <p class="max-w-3xl mx-auto mt-2 text-gray-600">Excellence is not a mere suggestion; it is a spiritual mandate
+            that glorifies God and opens doors to greater influence. It is the tangible expression of our commitment to
+            our calling.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+          <div class="md:col-span-3">
+            <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">Excellence Accelerates Career Progression
+            </h3>
+            <p class="text-gray-600 mb-4">Data from workplace performance reviews indicates a direct and powerful
+              correlation between a commitment to excellence (measured by factors like diligence, integrity, and
+              proactive problem-solving) and career velocity. Those who operate with a spirit of excellence are not just
+              noticed; they are trusted with more responsibility and leadership, significantly outpacing their peers in
+              both influence and income potential.</p>
+            <div class="chart-container h-80 md:h-96">
+              <canvas id="excellenceChart"></canvas>
             </div>
-        </section>
-        
-        <section id="stewardship" class="mb-16">
-            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold brand-text-deep">III. Strategic Stewardship & Investment</h2>
-                    <p class="max-w-3xl mx-auto mt-2 text-gray-600">True financial freedom is achieved not just by earning, but by wisely managing and multiplying the resources God has entrusted to us. This is the principle from the Parable of the Talents in action.</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">The Power of Compounding</h3>
-                        <p class="text-gray-600 mb-4 text-center lg:text-left">The single most powerful force in personal finance is compound interest. Starting early, even with small amounts, can lead to exponential growth over time, dwarfing the results of simple savings. The chart illustrates how an invested amount actively works for you, generating returns on your returns.</p>
-                        <div class="chart-container h-80 md:h-96">
-                            <canvas id="compoundingChart"></canvas>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">Beginner's Diversified Portfolio Model</h3>
-                        <p class="text-gray-600 mb-4 text-center lg:text-left">"Don't put all your eggs in one basket" is timeless wisdom. A diversified portfolio spreads risk and captures growth from different areas of the economy. This model provides a balanced starting point for young investors seeking long-term, stable growth.</p>
-                        <div class="chart-container h-80 md:h-96">
-                            <canvas id="portfolioChart"></canvas>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="md:col-span-2 space-y-4">
+            <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+              <h4 class="font-bold">Builds Trust</h4>
+              <p class="text-sm text-gray-600">Consistent, high-quality work establishes you as a credible and reliable
+                professional.</p>
             </div>
-        </section>
-
-        <section id="freedom-pathway" class="mb-16">
-            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold brand-text-deep">IV. The Pathway to Financial Freedom</h2>
-                    <p class="max-w-3xl mx-auto mt-2 text-gray-600">Financial freedom is a journey of disciplined steps, blending timeless biblical principles with modern strategies. This is not about getting rich quick, but building a sustainable foundation that liberates you to pursue your purpose without financial constraint.</p>
-                </div>
-
-                <div class="flex flex-col items-center space-y-4">
-                    <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
-                        <h4 class="font-bold text-lg">1. Foundation: Diligence & Generosity</h4>
-                        <p class="text-sm">Commit to excellent work and practice tithing & giving. This establishes your spiritual and financial base.</p>
-                    </div>
-                    <div class="text-4xl font-light flowchart-arrow">&#8595;</div>
-                    <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
-                        <h4 class="font-bold text-lg">2. Structure: Budgeting & Saving</h4>
-                        <p class="text-sm">Create a budget to track income/expenses. Build an emergency fund (3-6 months of expenses).</p>
-                    </div>
-                    <div class="text-4xl font-light flowchart-arrow">&#8595;</div>
-                    <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
-                        <h4 class="font-bold text-lg">3. Elimination: Avoid & Reduce Debt</h4>
-                        <p class="text-sm">Systematically pay down high-interest debt. Avoid new consumer debt to free up cash flow.</p>
-                    </div>
-                    <div class="text-4xl font-light flowchart-arrow">&#8595;</div>
-                    <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
-                        <h4 class="font-bold text-lg">4. Growth: Invest & Diversify</h4>
-                        <p class="text-sm">Start investing for the long term. Diversify across different asset classes.</p>
-                    </div>
-                    <div class="text-4xl font-light flowchart-arrow">&#8595;</div>
-                    <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
-                        <h4 class="font-bold text-lg">5. Acceleration: Multiply Income Streams</h4>
-                        <p class="text-sm">Leverage skills and technology to create additional income (freelancing, digital products, side business).</p>
-                    </div>
-                </div>
+            <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+              <h4 class="font-bold">Positions for Influence</h4>
+              <p class="text-sm text-gray-600">Competence earns you a seat at the table where key decisions are made.
+              </p>
             </div>
-        </section>
+            <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+              <h4 class="font-bold">Reflects Your Calling</h4>
+              <p class="text-sm text-gray-600">Your work becomes an act of worship and a testament to your faith.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <footer class="text-center mt-12 pt-8 border-t border-gray-300">
-            <p class="text-gray-600">This infographic translates principles of purpose-driven living into a data-backed narrative.</p>
-            <p class="text-sm text-gray-500 mt-2">&copy; 2025 Richard Ore. For educational purposes.</p>
-        </footer>
+    <section id="stewardship" class="mb-16">
+      <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold brand-text-deep">III. Strategic Stewardship & Investment</h2>
+          <p class="max-w-3xl mx-auto mt-2 text-gray-600">True financial freedom is achieved not just by earning, but by
+            wisely managing and multiplying the resources God has entrusted to us. This is the principle from the
+            Parable of the Talents in action.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">The Power of Compounding</h3>
+            <p class="text-gray-600 mb-4 text-center lg:text-left">The single most powerful force in personal finance is
+              compound interest. Starting early, even with small amounts, can lead to exponential growth over time,
+              dwarfing the results of simple savings. The chart illustrates how an invested amount actively works for
+              you, generating returns on your returns.</p>
+            <div class="chart-container h-80 md:h-96">
+              <canvas id="compoundingChart"></canvas>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-center mb-4 brand-text-bright">Beginner's Diversified Portfolio Model</h3>
+            <p class="text-gray-600 mb-4 text-center lg:text-left">"Don't put all your eggs in one basket" is timeless
+              wisdom. A diversified portfolio spreads risk and captures growth from different areas of the economy. This
+              model provides a balanced starting point for young investors seeking long-term, stable growth.</p>
+            <div class="chart-container h-80 md:h-96">
+              <canvas id="portfolioChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <section id="freedom-pathway" class="mb-16">
+      <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold brand-text-deep">IV. The Pathway to Financial Freedom</h2>
+          <p class="max-w-3xl mx-auto mt-2 text-gray-600">Financial freedom is a journey of disciplined steps, blending
+            timeless biblical principles with modern strategies. This is not about getting rich quick, but building a
+            sustainable foundation that liberates you to pursue your purpose without financial constraint.</p>
+        </div>
 
-    <script>
-        const wrapLabel = (str, maxWidth) => {
-            if (str.length <= maxWidth) {
-                return str;
-            }
-            const words = str.split(' ');
-            const lines = [];
-            let currentLine = '';
-            for (const word of words) {
-                if ((currentLine + ' ' + word).trim().length > maxWidth && currentLine.length > 0) {
-                    lines.push(currentLine);
-                    currentLine = word;
-                } else {
-                    currentLine = (currentLine + ' ' + word).trim();
-                }
-            }
-            if (currentLine.length > 0) {
-                lines.push(currentLine);
-            }
-            return lines;
-        };
-        
-        const tooltipTitleCallback = (tooltipItems) => {
-            const item = tooltipItems[0];
-            let label = item.chart.data.labels[item.dataIndex];
-            if (Array.isArray(label)) {
-              return label.join(' ');
-            }
-            return label;
-        };
-        
-        const chartColors = {
-            deepBlue: '#00449E',
-            brightBlue: '#0079D8',
-            lightBlue: '#48B2FF',
-            skyBlue: '#9CE1FF',
-            textColor: '#1F2937'
-        };
+        <div class="flex flex-col items-center space-y-4">
+          <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
+            <h4 class="font-bold text-lg">1. Foundation: Diligence & Generosity</h4>
+            <p class="text-sm">Commit to excellent work and practice tithing & giving. This establishes your spiritual
+              and financial base.</p>
+          </div>
+          <div class="text-4xl font-light flowchart-arrow">&#8595;</div>
+          <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
+            <h4 class="font-bold text-lg">2. Structure: Budgeting & Saving</h4>
+            <p class="text-sm">Create a budget to track income/expenses. Build an emergency fund (3-6 months of
+              expenses).</p>
+          </div>
+          <div class="text-4xl font-light flowchart-arrow">&#8595;</div>
+          <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
+            <h4 class="font-bold text-lg">3. Elimination: Avoid & Reduce Debt</h4>
+            <p class="text-sm">Systematically pay down high-interest debt. Avoid new consumer debt to free up cash flow.
+            </p>
+          </div>
+          <div class="text-4xl font-light flowchart-arrow">&#8595;</div>
+          <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
+            <h4 class="font-bold text-lg">4. Growth: Invest & Diversify</h4>
+            <p class="text-sm">Start investing for the long term. Diversify across different asset classes.</p>
+          </div>
+          <div class="text-4xl font-light flowchart-arrow">&#8595;</div>
+          <div class="w-full max-w-md text-center p-4 border-2 flowchart-step rounded-lg shadow-sm">
+            <h4 class="font-bold text-lg">5. Acceleration: Multiply Income Streams</h4>
+            <p class="text-sm">Leverage skills and technology to create additional income (freelancing, digital
+              products, side business).</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        const defaultChartOptions = {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        color: chartColors.textColor,
-                        font: { size: 12 }
-                    }
-                },
-                tooltip: {
-                    callbacks: {
-                        title: tooltipTitleCallback
-                    }
-                }
+    <footer class="text-center mt-12 pt-8 border-t border-gray-300">
+      <p class="text-gray-600">This is the accompanying website for the lecture given to the Christ Apostolic Church
+        Iponri Youth Fellowship (CACOIYF) on the June 7, 2025.</p>
+      <p class="text-sm text-gray-500 mt-2">&copy; 2025 Richard Ore. For educational purposes.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    const wrapLabel = (str, maxWidth) => {
+      if (str.length <= maxWidth) {
+        return str;
+      }
+      const words = str.split(' ');
+      const lines = [];
+      let currentLine = '';
+      for (const word of words) {
+        if ((currentLine + ' ' + word).trim().length > maxWidth && currentLine.length > 0) {
+          lines.push(currentLine);
+          currentLine = word;
+        } else {
+          currentLine = (currentLine + ' ' + word).trim();
+        }
+      }
+      if (currentLine.length > 0) {
+        lines.push(currentLine);
+      }
+      return lines;
+    };
+
+    const tooltipTitleCallback = (tooltipItems) => {
+      const item = tooltipItems[0];
+      let label = item.chart.data.labels[item.dataIndex];
+      if (Array.isArray(label)) {
+        return label.join(' ');
+      }
+      return label;
+    };
+
+    const chartColors = {
+      deepBlue: '#00449E',
+      brightBlue: '#0079D8',
+      lightBlue: '#48B2FF',
+      skyBlue: '#9CE1FF',
+      textColor: '#1F2937'
+    };
+
+    const defaultChartOptions = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            color: chartColors.textColor,
+            font: { size: 12 }
+          }
+        },
+        tooltip: {
+          callbacks: {
+            title: tooltipTitleCallback
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          grid: {
+            color: '#E5E7EB'
+          },
+          ticks: {
+            color: chartColors.textColor
+          }
+        },
+        x: {
+          grid: {
+            display: false
+          },
+          ticks: {
+            color: chartColors.textColor
+          }
+        }
+      }
+    };
+
+    if (document.getElementById('topSectorsChart')) {
+      const ctx = document.getElementById('topSectorsChart').getContext('2d');
+      const rawLabels = ['Ed-Tech and Digital Learning', 'Healthcare Innovation & Accessibility', 'Renewable Energy and Sustainability', 'FinTech for Social Good', 'Creative Arts and Digital Ministry'];
+      const wrappedLabels = rawLabels.map(label => wrapLabel(label, 16));
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: wrappedLabels,
+          datasets: [{
+            label: 'Projected 5-Year Job Growth (%)',
+            data: [22, 18, 25, 20, 15],
+            backgroundColor: [chartColors.deepBlue, chartColors.brightBlue, chartColors.lightBlue, chartColors.skyBlue, chartColors.deepBlue],
+            borderColor: '#FFFFFF',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          ...defaultChartOptions,
+          indexAxis: 'y',
+          scales: {
+            x: { ...defaultChartOptions.scales.x, grid: { display: true, color: '#E5E7EB' } },
+            y: { ...defaultChartOptions.scales.y, grid: { display: false } }
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: { callbacks: { title: tooltipTitleCallback } }
+          }
+        }
+      });
+    }
+
+    if (document.getElementById('motivationChart')) {
+      const ctx = document.getElementById('motivationChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Meaningful Impact', 'Financial Security', 'Work-Life Balance', 'Career Advancement'],
+          datasets: [{
+            data: [55, 25, 12, 8],
+            backgroundColor: [chartColors.deepBlue, chartColors.brightBlue, chartColors.lightBlue, chartColors.skyBlue],
+            hoverOffset: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                color: chartColors.textColor
+              }
             },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    grid: {
-                        color: '#E5E7EB'
-                    },
-                    ticks: {
-                        color: chartColors.textColor
-                    }
-                },
-                x: {
-                    grid: {
-                        display: false
-                    },
-                    ticks: {
-                        color: chartColors.textColor
-                    }
-                }
+            tooltip: {
+              callbacks: {
+                title: tooltipTitleCallback
+              }
             }
-        };
+          }
+        }
+      });
+    }
 
-        if (document.getElementById('topSectorsChart')) {
-            const ctx = document.getElementById('topSectorsChart').getContext('2d');
-            const rawLabels = ['Ed-Tech and Digital Learning', 'Healthcare Innovation & Accessibility', 'Renewable Energy and Sustainability', 'FinTech for Social Good', 'Creative Arts and Digital Ministry'];
-            const wrappedLabels = rawLabels.map(label => wrapLabel(label, 16));
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: wrappedLabels,
-                    datasets: [{
-                        label: 'Projected 5-Year Job Growth (%)',
-                        data: [22, 18, 25, 20, 15],
-                        backgroundColor: [chartColors.deepBlue, chartColors.brightBlue, chartColors.lightBlue, chartColors.skyBlue, chartColors.deepBlue],
-                        borderColor: '#FFFFFF',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    indexAxis: 'y',
-                    scales: {
-                        x: { ...defaultChartOptions.scales.x, grid: { display: true, color: '#E5E7EB' } },
-                        y: { ...defaultChartOptions.scales.y, grid: { display: false } }
-                    },
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: { callbacks: { title: tooltipTitleCallback } }
-                    }
-                }
-            });
+    if (document.getElementById('excellenceChart')) {
+      const ctx = document.getElementById('excellenceChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'],
+          datasets: [{
+            label: 'High Excellence Professional',
+            data: [55, 65, 80, 100, 125],
+            borderColor: chartColors.deepBlue,
+            backgroundColor: 'rgba(0, 68, 158, 0.1)',
+            fill: true,
+            tension: 0.4
+          }, {
+            label: 'Average Performer',
+            data: [50, 52, 55, 58, 62],
+            borderColor: chartColors.lightBlue,
+            backgroundColor: 'rgba(72, 178, 255, 0.1)',
+            fill: true,
+            tension: 0.4
+          }]
+        },
+        options: {
+          ...defaultChartOptions,
+          scales: {
+            ...defaultChartOptions.scales,
+            y: {
+              ...defaultChartOptions.scales.y,
+              title: {
+                display: true,
+                text: 'Income Potential (in thousands $)'
+              }
+            }
+          }
         }
+      });
+    }
 
-        if (document.getElementById('motivationChart')) {
-            const ctx = document.getElementById('motivationChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Meaningful Impact', 'Financial Security', 'Work-Life Balance', 'Career Advancement'],
-                    datasets: [{
-                        data: [55, 25, 12, 8],
-                        backgroundColor: [chartColors.deepBlue, chartColors.brightBlue, chartColors.lightBlue, chartColors.skyBlue],
-                        hoverOffset: 4
-                    }]
-                },
-                options: {
-                     responsive: true,
-                     maintainAspectRatio: false,
-                     plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                color: chartColors.textColor
-                            }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                title: tooltipTitleCallback
-                            }
-                        }
-                    }
-                }
-            });
+    if (document.getElementById('compoundingChart')) {
+      const ctx = document.getElementById('compoundingChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Yr 0', 'Yr 5', 'Yr 10', 'Yr 15', 'Yr 20', 'Yr 25', 'Yr 30'],
+          datasets: [{
+            label: 'Investment Growth (7% Annually)',
+            data: [5, 9.2, 17, 31.4, 58.1, 107.3, 198.4],
+            borderColor: chartColors.deepBlue,
+            fill: false,
+            tension: 0.1
+          }, {
+            label: 'Simple Savings',
+            data: [5, 6.25, 7.5, 8.75, 10, 11.25, 12.5],
+            borderColor: chartColors.lightBlue,
+            borderDash: [5, 5],
+            fill: false,
+            tension: 0.1
+          }]
+        },
+        options: {
+          ...defaultChartOptions,
+          scales: {
+            ...defaultChartOptions.scales,
+            y: {
+              ...defaultChartOptions.scales.y,
+              title: {
+                display: true,
+                text: 'Value (in thousands $)'
+              }
+            }
+          }
         }
-        
-        if (document.getElementById('excellenceChart')) {
-            const ctx = document.getElementById('excellenceChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'],
-                    datasets: [{
-                        label: 'High Excellence Professional',
-                        data: [55, 65, 80, 100, 125],
-                        borderColor: chartColors.deepBlue,
-                        backgroundColor: 'rgba(0, 68, 158, 0.1)',
-                        fill: true,
-                        tension: 0.4
-                    }, {
-                        label: 'Average Performer',
-                        data: [50, 52, 55, 58, 62],
-                        borderColor: chartColors.lightBlue,
-                        backgroundColor: 'rgba(72, 178, 255, 0.1)',
-                        fill: true,
-                        tension: 0.4
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    scales: {
-                        ...defaultChartOptions.scales,
-                        y: {
-                            ...defaultChartOptions.scales.y,
-                            title: {
-                                display: true,
-                                text: 'Income Potential (in thousands $)'
-                            }
-                        }
-                    }
-                }
-            });
-        }
+      });
+    }
 
-        if (document.getElementById('compoundingChart')) {
-            const ctx = document.getElementById('compoundingChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ['Yr 0', 'Yr 5', 'Yr 10', 'Yr 15', 'Yr 20', 'Yr 25', 'Yr 30'],
-                    datasets: [{
-                        label: 'Investment Growth (7% Annually)',
-                        data: [5, 9.2, 17, 31.4, 58.1, 107.3, 198.4],
-                        borderColor: chartColors.deepBlue,
-                        fill: false,
-                        tension: 0.1
-                    }, {
-                        label: 'Simple Savings',
-                        data: [5, 6.25, 7.5, 8.75, 10, 11.25, 12.5],
-                        borderColor: chartColors.lightBlue,
-                        borderDash: [5, 5],
-                        fill: false,
-                        tension: 0.1
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    scales: {
-                         ...defaultChartOptions.scales,
-                        y: {
-                            ...defaultChartOptions.scales.y,
-                            title: {
-                                display: true,
-                                text: 'Value (in thousands $)'
-                            }
-                        }
-                    }
-                }
-            });
+    if (document.getElementById('portfolioChart')) {
+      const ctx = document.getElementById('portfolioChart').getContext('2d');
+      const rawLabels = ['Domestic & International Stocks', 'Bonds & Fixed Income', 'Real Estate (REITs)', 'High-Yield Savings / Cash'];
+      const wrappedLabels = rawLabels.map(label => wrapLabel(label, 18));
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: wrappedLabels,
+          datasets: [{
+            label: 'Portfolio Allocation %',
+            data: [60, 20, 15, 5],
+            backgroundColor: [chartColors.deepBlue, chartColors.brightBlue, chartColors.lightBlue, chartColors.skyBlue],
+            hoverOffset: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                color: chartColors.textColor
+              }
+            },
+            tooltip: {
+              callbacks: {
+                title: tooltipTitleCallback
+              }
+            }
+          }
         }
-
-        if (document.getElementById('portfolioChart')) {
-            const ctx = document.getElementById('portfolioChart').getContext('2d');
-            const rawLabels = ['Domestic & International Stocks', 'Bonds & Fixed Income', 'Real Estate (REITs)', 'High-Yield Savings / Cash'];
-            const wrappedLabels = rawLabels.map(label => wrapLabel(label, 18));
-            new Chart(ctx, {
-                type: 'pie',
-                data: {
-                    labels: wrappedLabels,
-                    datasets: [{
-                        label: 'Portfolio Allocation %',
-                        data: [60, 20, 15, 5],
-                        backgroundColor: [chartColors.deepBlue, chartColors.brightBlue, chartColors.lightBlue, chartColors.skyBlue],
-                        hoverOffset: 4
-                    }]
-                },
-                 options: {
-                     responsive: true,
-                     maintainAspectRatio: false,
-                     plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                color: chartColors.textColor
-                            }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                title: tooltipTitleCallback
-                            }
-                        }
-                    }
-                }
-            });
-        }
-    </script>
+      });
+    }
+  </script>
 </body>
+
 </html>
